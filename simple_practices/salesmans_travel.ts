@@ -50,7 +50,6 @@ export class G964 {
     public static travel = (r: string, zipcode: string) => {
 
         const travelArray = r.split(',');
-        // const foundLocations = travelArray.filter(locateString => locateString.includes(zipcode));
         const foundLocations = travelArray.filter(locateString => zipcode.split(' ').pop() === locateString.split(' ').pop());
 
         console.log(foundLocations);
